@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B3A0008D-BBA3-E25F-1948-31B7C25FD595}</ProjectGuid>
+    <ProjectGuid>{1A29CEB6-990C-62AB-A7F1-A429AEA441C5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,12 +56,12 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Lesers\Flyer.cs" />
     <Compile Include="Assets\ClassesPractice\MyVector2.cs" />
     <Compile Include="Assets\ClassesPractice\Person.cs" />
-    <Compile Include="Assets\ClassesPractice\TestMonoBehaviour.cs" />
-    <Compile Include="Assets\Lesers\Flyer.cs" />
-    <Compile Include="Assets\Lesers\FlyerSpawner.cs" />
     <Compile Include="Assets\Lesers\BoundsHelper.cs" />
+    <Compile Include="Assets\ClassesPractice\TestMonoBehaviour.cs" />
+    <Compile Include="Assets\Lesers\FlyerSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
