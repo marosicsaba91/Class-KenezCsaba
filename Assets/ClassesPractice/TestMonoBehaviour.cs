@@ -1,10 +1,8 @@
-using System;
 using UnityEngine;
 
 class TestMonoBehaviour : MonoBehaviour
 {
     Vector2 v8;
-    Transform t;
 
     void Start()
     {
