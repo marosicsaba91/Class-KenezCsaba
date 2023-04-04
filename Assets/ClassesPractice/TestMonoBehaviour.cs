@@ -2,10 +2,11 @@ using UnityEngine;
 
 class TestMonoBehaviour : MonoBehaviour
 {
-    Vector2 v8;
+    // Vector2 v8;
 
     void Start()
     {
+        /*
         MyVector2 v = new MyVector2();
 
         Person p1 = new Person("Ödön", 180, 2013, false);
@@ -61,9 +62,9 @@ class TestMonoBehaviour : MonoBehaviour
 
 
         Debug.Log(v8.x);
-        Debug.Log(t.position);
+        Debug.Log(t.position);*/
     }
-
+    /*
     void ChangeHight(Person p1)
     {
         p1.SetHeight(p1.GetHeight()+100);
@@ -73,4 +74,5 @@ class TestMonoBehaviour : MonoBehaviour
     {
         v1.x += 100;
     }
+    */
 }

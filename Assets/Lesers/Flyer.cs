@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 class Flyer : MonoBehaviour
 {
@@ -11,8 +10,6 @@ class Flyer : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(area.center, area.size);
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(targetPoint, 0.1f);
     }

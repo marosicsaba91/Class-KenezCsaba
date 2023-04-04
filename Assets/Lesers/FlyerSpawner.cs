@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class FlyerSpawner : MonoBehaviour
 {
+
     [SerializeField] Bounds area;
     [SerializeField] float spawnTime = 1;
-    [SerializeField] GameObject spawnable;
 
     void Start()
     {
@@ -13,13 +13,16 @@ public class FlyerSpawner : MonoBehaviour
 
     void Generate() 
     {
-        GameObject newObj = Instantiate(spawnable);
-        newObj.transform.parent = transform;
-        newObj.transform.position = BoundsHelper.GetRandomPoint(area);
-
-        Flyer flyer = newObj.GetComponent<Flyer>();
+        Flyer flyer = FlyerPool.GetFlyer();
+        flyer.transform.position = BoundsHelper.GetRandomPoint(area);         
         flyer.SetArea(area);
 
         Invoke(nameof(Generate), spawnTime);
+    }
+    
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(area.center, area.size);
     }
 }
