@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -27,7 +28,19 @@ public class FlyerPool : MonoBehaviour
 
     void CreateNewElement()
     {
+        /*
+        GameObject protoGO = flyerPrefab.gameObject;
+        GameObject newGO = Instantiate(protoGO, transform);
+        Flyer newFlyer = newGO.GetComponent<Flyer>();
+        */
+
+
         Flyer newFlyer = Instantiate(flyerPrefab, transform);
+
+
+
+
+
         newFlyer.name = "Flayer " + flyerIndex;
         flyerIndex++;
         flyers.Add(newFlyer);
