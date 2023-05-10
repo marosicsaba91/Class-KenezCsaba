@@ -31,11 +31,11 @@ class ThirdPersonShooter : MonoBehaviour
 
         if (Application.isPlaying) 
         {
-            HandleSoting();
+            HandleShooting();
         }
     }
 
-    void HandleSoting()
+    void HandleShooting()
     {
         bool shoot = Input.GetKeyDown(shootKey);
 
