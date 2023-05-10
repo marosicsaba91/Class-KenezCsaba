@@ -56,20 +56,28 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Lesers\Flyer.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\Flyer.cs" />
     <Compile Include="Assets\ClassesPractice\MyVector2.cs" />
-    <Compile Include="Assets\Lesers\Laser.cs" />
-    <Compile Include="Assets\Lesers\TargetLifebar.cs" />
-    <Compile Include="Assets\Lesers\IResetable.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\Laser.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\ConstantSpeedFollower.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\TargetLifebar.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\IResetable.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\DistanceBasedFollower.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\Pool.cs" />
     <Compile Include="Assets\ClassesPractice\Person.cs" />
-    <Compile Include="Assets\Lesers\BoundsHelper.cs" />
-    <Compile Include="Assets\Lesers\FlyerPool.cs" />
-    <Compile Include="Assets\Lesers\FaceCamera.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\ThirdPersonShooter.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\BoundsHelper.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\RobotAnimation.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\FaceCamera.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\ThirdPersonPlayer.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\AcceleratingFollower.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\Bullet.cs" />
     <Compile Include="Assets\ClassesPractice\TestMonoBehaviour.cs" />
-    <Compile Include="Assets\ThirdPersonGame\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\Lesers\LaserTarget.cs" />
-    <Compile Include="Assets\Lesers\FlyerSpawner.cs" />
-    <Compile Include="Assets\ThirdPersonGame\ThirdPersonPlayer.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\LaserTarget.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\AudioSet.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Lesers\FlyerSpawner.cs" />
+    <Compile Include="Assets\ThirdPersonGame\Scripts\Follower.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
