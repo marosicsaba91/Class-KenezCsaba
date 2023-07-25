@@ -4,7 +4,7 @@ using UnityEngine;
 public class ThirdPersonCamera : MonoBehaviour, IResetable
 {
     [Header("Referenecs")]
-    [SerializeField] Transform target;
+    public Transform target;
     [SerializeField] Transform distanceObject;
     
     [SerializeField] new Camera camera;
@@ -28,6 +28,8 @@ public class ThirdPersonCamera : MonoBehaviour, IResetable
 
     void Update()
     {
+        if (target == null) return;
+
         float xMovement = Input.GetAxis("Mouse X") * horizontalSensitivity;
         float yMovement = Input.GetAxis("Mouse Y") * verticalSensitivity;
 
